@@ -17,7 +17,7 @@ router.post('/register',(req,res)=>{
         //here's where we save to user to the database
         Users.add(credentials)
             .then((user)=>{
-                res.status(200).json({data:user})
+                res.status(200).json({data:user })
             }) .catch((error)=>{
                 res.status(400).json({message:error.message})
             })
